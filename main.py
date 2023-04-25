@@ -1,12 +1,12 @@
-#3
-"""Напишіть функцію squares_list(lst), яка приймає
-список lst чисел та повертає новий список зі
-значеннями, які є квадратами елементів вхідного списку.
-Напишіть код, що демонструє роботу функції та показує
-список з квадратами елементів у деяких списках."""
+#4
+"""Задано словник зі словами та їх значеннями. Напишіть
+функцію long_words(dictionary), яка приймає цей
+словник та повертає список всіх слів, що містять не менше
+ніж 5 символів (не забудьте оператор return). Напишіть
+код, що демонструє роботу функції та показує список слів
+у деяких словниках."""
 
-def squares_list(lst):
-    return [x**2 for x in lst]
-lst1 = [1, 2, 3, 4, 5]
-print(squares_list(lst1))
-
+def long_words(dictionary):
+    return [word for word in dictionary if len(word) >= 5]
+dict1 = {'apple': 'a fruit', 'carrot': 'a vegetable', 'python': 'a programming language', 'bike': 'a vehicle'}
+print(long_words(dict1))
