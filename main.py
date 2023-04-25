@@ -16,3 +16,21 @@ def count_vowels(s):
 s1 = input('Введіть рядок англ. мовою: ')
 
 print(count_vowels(s1))
+
+#3
+"""Напишіть функцію squares_list(lst), яка приймає
+список lst чисел та повертає новий список зі
+значеннями, які є квадратами елементів вхідного списку.
+Напишіть код, що демонструє роботу функції та показує
+список з квадратами елементів у деяких списках."""
+
+def squares_list(lst):
+    return [x**2 for x in lst]
+lst1 = [1, 2, 3, 4, 5]
+print(squares_list(lst1))
+
+#4
+def long_words(dictionary):
+    return [word for word in dictionary if len(word) >= 5]
+dict1 = {'apple': 'a fruit', 'carrot': 'a vegetable', 'python': 'a programming language', 'bike': 'a vehicle'}
+print(long_words(dict1))
